@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
@@ -35,7 +36,11 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+build/
+dist
+dist-ssr
+*.local
+temp/
 
 # Dependency directories
 node_modules/
@@ -71,6 +76,7 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+ormconfig.json
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -102,3 +108,18 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Static files
+uploads/*
+!uploads/.gitkeep
